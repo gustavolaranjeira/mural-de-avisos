@@ -5,7 +5,7 @@ const cors = require("cors");
 const posts = require("../modal/posts");
 
 const options = {
-    origin: "http://localhost:3000",
+    origin: "https://mighty-river-75813.herokuapp.com",
 };
 
 router.use(cors(options));
