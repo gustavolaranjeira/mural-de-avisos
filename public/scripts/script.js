@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function updatePosts() {
-    fetch("http://localhost:3000/api/all")
+    fetch("https://mighty-river-75813.herokuapp.com/api/all")
         .then((res) => {
             return res.json();
         })
@@ -36,7 +36,7 @@ function newPost() {
         body: JSON.stringify(post),
     };
 
-    fetch("http://localhost:3000/api/new", options).then((res) => {
+    fetch("https://mighty-river-75813.herokuapp.com/api/new", options).then((res) => {
         console.log(res);
         updatePosts();
         document.getElementById("title").value = "";
